@@ -42,8 +42,8 @@ try {
 // --- DEFAULT COUPONS ---
 const DEFAULT_COUPONS = {
   "WELCOME10": { type: 'percent', value: 10, minOrder: 500, isActive: true, expiryDate: "2030-12-31" },
-  "FESTIVAL20": { type: 'percent', value: 20, minOrder: 1500, isActive: true, expiryDate: "2030-12-31" },
-  "FLAT50": { type: 'flat', value: 50, minOrder: 1000, isActive: true, expiryDate: "2023-01-01" }
+  "FESTIVAL20": { type: 'percent', value: 20, minOrder: 1000, isActive: true, expiryDate: "2030-12-31" },
+  "FLAT50": { type: 'flat', value: 50, minOrder: 2000, isActive: false, expiryDate: "2023-01-01" }
 };
 
 // --- MOCK DATA ---
@@ -71,7 +71,7 @@ const PRODUCTS = [
   {
     id: 2,
     name: "DryFruits Putharekulu",
-    teluguName: " ",
+    teluguName: "DRYFRUITS బెల్లం పూతరేకులు ",
     price: 249,
     originalPrice: 549,
     packSize: "Box of 10",
@@ -87,7 +87,7 @@ const PRODUCTS = [
   {
     id: 3,
     name: "Special DryFruit Putharekulu",
-    teluguName: "",
+    //teluguName: "",
     price: 449,
     originalPrice: 749,
     packSize: "10 Pieces",
